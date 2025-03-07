@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&family=Open+Sans:ital,wght@0,300;1,300&family=Roboto:ital,wght@0,231;1,231&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -31,14 +33,22 @@ nav ul li a:hover{
     color: aqua;
 }
 #home{
-    background: url(/assets/istockphoto-1419766496-612x612.jpg) center/ cover no-repeat;
+    background: url(/assets/Fortune-Tiger.jpg) center/ cover no-repeat;
     height: 100vh;
-    color: white;
+    color: black;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#home h1{
+    font-size: 50px;
+}
+#home p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 section{
@@ -56,4 +66,25 @@ form label{
     margin-top: 10px;
     font-weight: bold;
 }
+form input, form textarea{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius:  10px;
 
+}
+form button{
+    background: #222;
+    color:  white;
+    padding: 10px;
+    cursor: pointer;
+
+}
+form button:hover{
+    background: rgb(44, 56, 56);
+}
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
