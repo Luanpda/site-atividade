@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: "Open Sans", sans-serif;
 }
+
+
+
 nav{
     background-color: #222;
     padding: 15px;
@@ -81,6 +84,12 @@ form button{
 }
 form button:hover{
     background: rgb(44, 56, 56);
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 footer{
     background: #222;
