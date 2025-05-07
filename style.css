@@ -69,11 +69,10 @@ body{
     background: url(/img/minesweeper.png);
 }
 
-    
-
-
-
 .texto{
    padding-top: 5em;
+}
+.margin-top{
+    margin-top: 12em;
 }
 
