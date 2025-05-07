@@ -47,7 +47,7 @@ body{
     height: 100vh;
     color: var(--bs-white);
     background-color: #141619;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     
 }
 .texto-imagem{
@@ -61,11 +61,11 @@ body{
     background-position:right;
 }
 .sudoku{
-    margin-top: 6em;
+    margin-top: 10em;
     background-image: url(/img/sudoku-game.png);
 }
 .minesweeper{
-    margin-top: 6em;
+    margin-top: 10em;
     background-position:right;
     background: url(/img/minesweeper.png);
 }
