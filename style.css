@@ -107,7 +107,7 @@ body{
     }
    .imagem{
     display: block;
-    padding-left: 2em;
+    
     max-width:350px;
    }
     .texto p {
