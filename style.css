@@ -65,6 +65,7 @@ body{
 .sudoku{
     margin-top: 10em;
     background-image: url(/img/sudoku-game.png);
+    
 }
 .minesweeper{
     margin-top: 10em;
@@ -78,6 +79,9 @@ body{
 }
 .titulo{
     color: var(--azul-titulo);
+}
+.imagem{
+    display: none;
 }
 
 
@@ -93,5 +97,21 @@ body{
 .navbar-brand:hover {
     color: var(--azul-hover);
     border-radius: 5px;
+    
+    
     transition: 0.3s;
 }
+@media (max-width: 768px) {
+   .inicial{
+    background: none;
+   }
+   .imagem{
+    display: block;
+   }
+    .texto p {
+        font-size: 0.95rem;
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    
+  }
