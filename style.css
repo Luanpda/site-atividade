@@ -107,6 +107,11 @@ body{
    }
    .imagem{
     display: block;
+    padding-right: 4em;
+    width: 800px;
+   
+    
+    
    }
     .texto p {
         font-size: 0.95rem;
