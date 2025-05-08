@@ -102,16 +102,13 @@ body{
     transition: 0.3s;
 }
 @media (max-width: 768px) {
-   .inicial{
-    background: none;
-   }
+    .texto-imagem{
+        background: none;
+    }
    .imagem{
     display: block;
-    padding-right: 4em;
-    width: 800px;
-   
-    
-    
+    padding-left: 2em;
+    max-width:350px;
    }
     .texto p {
         font-size: 0.95rem;
