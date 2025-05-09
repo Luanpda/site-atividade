@@ -36,17 +36,9 @@
        
     </header>
     <main>
-        <div id="card-container"></div>
+        
 
-
-       
-
-
-
-          
-          
-
-        <div class="container texto-imagem inicial informacoes" >
+        <div class="container texto-imagem inicial " >
             
                 <div class="  col-md-5 col-lg-5 texto" id="texto">
                     <h1 class="display-5 titulo" >Pastime Games </h1>
@@ -58,6 +50,8 @@
 
         </div>
 
+        <div id="card-container"></div>
+        
         <div class="container d-flex texto-imagem sudoku informacoes" >
             
             <div class="texto col-12 col-md-5 col-lg-5 ms-auto " >
@@ -155,7 +149,7 @@
                 card_center.classList.add('container', 'd-flex', 'flex-column', 'align-items-center', 'justify-content-center');
 
                 card_center.innerHTML = `
-                    <div class="card text-white bg-dark" style="width: 18rem;">
+                    <div class="card text-white bg-dark margin-top" style="width: 22rem;">
                         <img src="/img/sudoku-game.png" class="card-img-top border-0" alt="Sudoku">
                         <div class="card-body">
                             <h3 class="titulo card-title text-center mb-3">SUDOKU</h3>
@@ -168,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="card text-white bg-dark margin-top" style="width: 18rem;">
+                    <div class="card text-white bg-dark margin-top" style="width: 22rem;">
                         <img src="/img/campo-minado.png" class="card-img-top border-0" alt="Campo Minado">
                         <div class="card-body">
                             <h3 class="titulo card-title text-center mb-3">CAMPO MINADO</h3>
@@ -191,8 +185,6 @@
 
     
     window.addEventListener('DOMContentLoaded', mobile_mode);
-
-    
     window.addEventListener('resize', mobile_mode);
     </script>
 </body>

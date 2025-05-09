@@ -104,6 +104,7 @@ body{
 @media (max-width: 768px) {
     .texto-imagem{
         background: none;
+        min-height: auto;
         
     }
     .informacoes{
