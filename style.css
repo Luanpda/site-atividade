@@ -58,21 +58,8 @@ body{
     
     min-height: 80vh;
 }
-.inicial{
-    background-image: url(img/inicial.png);
-    background-position:right;
-}
-.sudoku{
-    margin-top: 10em;
-    background-image: url(/img/sudoku-game.png);
-    
-}
-.minesweeper{
-    margin-top: 10em;
-    background-position:right;
-    background: url(/img/campo-minado.png) no-repeat right;
-    background-size: contain;
-}
+
+
 
 .texto{
    padding-top: 5em;
@@ -103,7 +90,7 @@ body{
 }
 @media (max-width: 768px) {
     .texto-imagem{
-        background: none;
+        
         min-height: auto;
         
     }
@@ -113,8 +100,10 @@ body{
     
    .imagem{
     display: block;
-    
     max-width:350px;
+   }
+   .inicial-img{
+    display: none;
    }
     .texto p {
         font-size: 0.95rem;
