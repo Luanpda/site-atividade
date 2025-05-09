@@ -146,54 +146,54 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     <script>
-        window.addEventListener('resize', () => {
-    const cardContainer = document.getElementById('card-container');
-    
-    if (window.innerWidth <= 768) {
+         function mobile_mode(){
+        const cardContainer = document.getElementById('card-container');
         
-        if (!cardContainer.querySelector('.card')) {
-            
-            const card_center = document.createElement('div');
-            card_center.classList.add('container', 'd-flex', 'flex-column', 'align-items-center', 'justify-content-center');
+        if (window.innerWidth <= 768) {
+            if (!cardContainer.querySelector('.card')) {
+                const card_center = document.createElement('div');
+                card_center.classList.add('container', 'd-flex', 'flex-column', 'align-items-center', 'justify-content-center');
 
-            
-            card_center.innerHTML = `
-                 <div class="card text-white bg-dark" style="width: 18rem;">
-            <img src="/img/sudoku-game.png" class="card-img-top border-0" alt="Sudoku">
-            <div class="card-body">
-                <h3 class="titulo card-title text-center mb-3" >SUDOKU</h1>
-                <p class="card-text"><strong>Desafie sua mente com o clássico Sudoku!</strong><br>
-                    Coloque seus neurônios para trabalhar, resolvendo esse quebra-cabeça lógico onde o objetivo é simples, mas a diversão é garantida 😄.<br>
-                    Preencha os quadrados com os números de 1 a 9 sem repeti-los em cada linha, coluna e bloco!<br>
-                    🟩 Fácil, 🟨 Médio ou 🟥 Difícil... escolha sua dificuldade e mostre que você é mestre na lógica!<br><br>
-                    ✍️ Use o modo rascunho, evite erros e tente zerar com o menor número de falhas possível.<br>
-                    Boa sorte e divirta-se! 🎉</p>
-            </div>
-          </div>
+                card_center.innerHTML = `
+                    <div class="card text-white bg-dark" style="width: 18rem;">
+                        <img src="/img/sudoku-game.png" class="card-img-top border-0" alt="Sudoku">
+                        <div class="card-body">
+                            <h3 class="titulo card-title text-center mb-3">SUDOKU</h3>
+                            <p class="card-text"><strong>Desafie sua mente com o clássico Sudoku!</strong><br>
+                                Coloque seus neurônios para trabalhar, resolvendo esse quebra-cabeça lógico onde o objetivo é simples, mas a diversão é garantida 😄.<br>
+                                Preencha os quadrados com os números de 1 a 9 sem repeti-los em cada linha, coluna e bloco!<br>
+                                🟩 Fácil, 🟨 Médio ou 🟥 Difícil... escolha sua dificuldade e mostre que você é mestre na lógica!<br><br>
+                                ✍️ Use o modo rascunho, evite erros e tente zerar com o menor número de falhas possível.<br>
+                                Boa sorte e divirta-se! 🎉</p>
+                        </div>
+                    </div>
 
-
-        
-
-        <div class="card text-white bg-dark margin-top" style="width: 18rem;">
-            <img src="/img/campo-minado.png" class="card-img-top border-0 " alt="Campo Minado">
-            <div class="card-body">
-                <h3 class="titulo card-title text-center mb-3" >CAMPO MINADO</h1>
-                <p class="card-text">💣 <strong>Campo Minado</strong> é um clássico jogo de raciocínio e estratégia onde o objetivo é desmarcar todas as minas escondidas no tabuleiro sem detoná-las. Cada célula do campo de jogo possui dicas sobre o número de minas nas células vizinhas, e a lógica do jogo é usar essas informações para limpar o campo com segurança. 🧠<br><br>
-                    Assim como o Sudoku, o <strong>Campo Minado</strong> foi desenvolvido com tecnologias modernas, garantindo uma experiência de jogo rápida e envolvente, sem comprometer o desempenho, seja no seu celular ou computador. 📱💻<br><br>
-                    Prepare-se para testar sua lógica e estratégia neste desafio, onde cada clique conta! Boa sorte e que vença o melhor estrategista!</p>
-            </div>
-          </div>
-            `;
-            cardContainer.appendChild(card_center);  
-        }
-    } else {
-        
-        const card = cardContainer.querySelector('.card');
-        if (card) {
-            cardContainer.removeChild(card);
+                    <div class="card text-white bg-dark margin-top" style="width: 18rem;">
+                        <img src="/img/campo-minado.png" class="card-img-top border-0" alt="Campo Minado">
+                        <div class="card-body">
+                            <h3 class="titulo card-title text-center mb-3">CAMPO MINADO</h3>
+                            <p class="card-text">💣 <strong>Campo Minado</strong> é um clássico jogo de raciocínio e estratégia onde o objetivo é desmarcar todas as minas escondidas no tabuleiro sem detoná-las. Cada célula do campo de jogo possui dicas sobre o número de minas nas células vizinhas, e a lógica do jogo é usar essas informações para limpar o campo com segurança. 🧠<br><br>
+                                Assim como o Sudoku, o <strong>Campo Minado</strong> foi desenvolvido com tecnologias modernas, garantindo uma experiência de jogo rápida e envolvente, sem comprometer o desempenho, seja no seu celular ou computador. 📱💻<br><br>
+                                Prepare-se para testar sua lógica e estratégia neste desafio, onde cada clique conta! Boa sorte e que vença o melhor estrategista!</p>
+                        </div>
+                    </div>
+                `;
+                card_center.id = "cards-mobile"; 
+                cardContainer.appendChild(card_center);
+            }
+        } else {
+            const existingCardDiv = document.getElementById("cards-mobile");
+            if (existingCardDiv) {
+                cardContainer.removeChild(existingCardDiv);
+            }
         }
     }
-});
+
+    
+    window.addEventListener('DOMContentLoaded', mobile_mode);
+
+    
+    window.addEventListener('resize', mobile_mode);
     </script>
 </body>
 </html>
