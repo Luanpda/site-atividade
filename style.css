@@ -104,7 +104,12 @@ body{
 @media (max-width: 768px) {
     .texto-imagem{
         background: none;
+        
     }
+    .informacoes{
+        display: none  !important;
+    }
+    
    .imagem{
     display: block;
     
