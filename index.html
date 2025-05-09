@@ -182,7 +182,18 @@
             }
         }
     }
+    const cards = document.querySelectorAll('.card');
 
+    cards.forEach(card => {
+        card.addEventListener('pointerdown', () => {
+
+            card.style='transform: scale(1.02);transition: all 1s ease-out;'
+        });
+
+    card.addEventListener('pointerup', () => {
+        card.style='transform: scale(1.00);'
+    });
+    });    
     
     window.addEventListener('DOMContentLoaded', mobile_mode);
     window.addEventListener('resize', mobile_mode);
