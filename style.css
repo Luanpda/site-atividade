@@ -121,5 +121,9 @@ body{
         max-width: 90%;
         margin: 0 auto;
       }
-    
+    .card:hover{
+        transform: scale(1.02);
+        transition: all 1s ease-out;
+        box-shadow: #0d6efd 0px 5px 15px;
+    }
   }

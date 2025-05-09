@@ -185,12 +185,13 @@
     const cards = document.querySelectorAll('.card');
 
     cards.forEach(card => {
-        card.addEventListener('pointerdown', () => {
-
+        card.addEventListener('click', () => {
+            console.log("Ativou o pointerdow")
             card.style='transform: scale(1.1);transition: all 1s ease-out;box-shadow: #0d6efd 0px 5px 15px;'
         });
 
     card.addEventListener('pointerup', () => {
+        console.log("desativouo pointerdow")
         card.style='transform: scale(1.00);'
     });
     });    
